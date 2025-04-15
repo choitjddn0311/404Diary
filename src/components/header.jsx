@@ -21,13 +21,15 @@ const Header = (props) => {
                                     <Link to="/">
                                     <li className="gnb">홈으로</li>
                                     </Link>
-                                    <Link to="/product">
+                                    <Link to="/show">
                                     <li className="gnb">글보기</li>
                                     </Link>
-                                    <Link to="/product">
+                                    <Link to="/write">
                                     <li className="gnb">글 쓰기</li>
                                     </Link>
-                                    <li className="gnb">주인장은 누구인가?</li>
+                                    <Link to="/portfolio">
+                                    <li className="gnb">포트폴리오</li>
+                                    </Link>
                                 </ul>
                             </nav>
                         </div>
