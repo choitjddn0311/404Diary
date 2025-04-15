@@ -15,5 +15,14 @@ export const Footer = styled.footer `
 
 export const FooterLogo = styled.div `
     filter: grayscale(1);
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    object-fit: cover;
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
     
 `;
