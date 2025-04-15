@@ -13,6 +13,7 @@
 :root {
     --containerWidth: 1400px;
     --mainFontSize: 18px;
+    --midFontSize: 15px;
     --subFontSize: 13px;
     --mainColor: #00a6fb;
 }
@@ -29,6 +30,13 @@ header {
     height: 100px;
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #fff;
+}
+.scrollHeader {
+    box-shadow: 0 0 20px #eee;
 }
 .headerInner {
     width: var(--containerWidth);
@@ -67,6 +75,7 @@ header {
 .logo {
     width: 20%;
     height: 100%;
+    transition: .5s;
 }
 nav {
     width: 35%;
@@ -122,14 +131,91 @@ nav {
 .gnb:hover::after {
     width: 50%;
 }
-section {
+.writeContainer {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-section > h3 {
-    text-align: center;
-    align-content: center;
-
+.writeInner {
+    width: 1400px;
+    height: 90vh;
+}
+.writeInner > form {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title.filled h1,
+.content.filled h2 {
+    color: var(--mainColor);
+}
+.title.filled input {
+    border-bottom: 1px solid var(--mainColor);
+}
+.title > h1 {
+    color: #aaa;
+}
+.title > input {
+    width: 100%;
+    height: 7vh;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    font-size: 30px;
+}
+.content {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content.filled textarea {
+    border: 1px solid var(--mainColor);
+}
+.content > h2 {
+    color: #aaa;
+}
+.content > textarea {
+    width: 100%;
+    height: 60vh;
+    resize: none;
+    outline: none;
+    border: 1px solid #aaa;
+    padding: 20px;
+    font-size: var(--mainFontSize);
+} 
+.writeInner  input[type='submit'] {
+    width: 100%;
+    height: 50px;
+    background: var(--mainColor);
+    border: none;
+    color: #fff;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+.footerLogo {   
+    filter: grayscale(1);
+}
+footer > p {
+    font-size: var(--midFontSize);
 }

@@ -1,15 +1,17 @@
 import React, {Component} from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import GlobalStyle from "./style/globalStyle";
 import Header from "./components/header";
 import Home from "./page/home";
 import Footer from "./components/footer";
 import Write from "./page/write";
-import Show from "./page/show"
+import Show from "./page/show";
 import NotFound from "./page/404";
 
 const App = () => {
     return (
-        <div className="app">
+        <>
+            <GlobalStyle />
             <BrowserRouter>
                 <Header />
                 <Routes>
@@ -18,9 +20,10 @@ const App = () => {
                     <Route path="*" element={<NotFound />}></Route>
                     <Route path="/show/*" element={<Show />}></Route>
                 </Routes>
+                <Footer />
             </BrowserRouter>
-        </div>
+        </>
     );
 }
 
-export default App
+export default App;
