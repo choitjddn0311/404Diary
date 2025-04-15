@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from 'react-router-dom';
+import logo from '../images/404DIRARY_LOGO.png';
 
 const Header = (props) => {
     return (
@@ -15,7 +16,11 @@ const Header = (props) => {
                             </ul>
                         </div>
                         <div className="headerMain">
-                                <div className="logo"></div>
+                                <div className="logo">
+                                    <Link to="/">
+                                        <img src={logo} alt="" />
+                                    </Link>
+                                </div>
                             <nav>
                                 <ul className="gnbContainer">
                                     <Link to="/">

@@ -1,15 +1,14 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import "../style.css"
 
-const Home = (props) => {
+const Write = (props) => {
     return (
         <>
             <section>
-                <h3>404 DIRARY Main Page</h3>   
+                <h3>글쓰기</h3>
             </section>
         </>
     );
-};
+}
 
-export default Home;
+export default Write;

@@ -67,7 +67,6 @@ header {
 .logo {
     width: 20%;
     height: 100%;
-    background: red;
 }
 nav {
     width: 35%;
@@ -122,4 +121,15 @@ nav {
 .gnb:hover::before,
 .gnb:hover::after {
     width: 50%;
+}
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+section > h3 {
+    text-align: center;
+    align-content: center;
+
 }
