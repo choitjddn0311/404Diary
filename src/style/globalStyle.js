@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
     @font-face {
     font-family: 'KakaoBigSans-ExtraBold';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoBigSans-ExtraBold.woff2') format('woff2');
@@ -29,5 +29,3 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
 `;
-
-export default GlobalStyle;

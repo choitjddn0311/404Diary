@@ -30,5 +30,5 @@ app.post("/api/posts" , (req,res) => {
 })
 
 app.listen(port , () => {
-    console.log(`${port}포트에서 듣는중이당`);
+    console.log(`${port}포트에서 듣는중`);
 })

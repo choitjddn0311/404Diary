@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-import logo from '../images/404DIRARY_LOGO.png';
-// 스타일 컴포넌트 import
+import logo from '../images/404DIARY_LOGO.png';
 import { 
     Header as StyledHeader, 
     HeaderInner, 
@@ -12,7 +11,7 @@ import {
     Nav, 
     GnbContainer, 
     Gnb 
-} from '../style/headerStyle'; // 실제 경로로 수정해주세요
+} from '../style/headerStyle';
 
 const Header = (props) => {
     const [scroll, setIsScroll] = useState(false);
@@ -41,7 +40,7 @@ const Header = (props) => {
                     <HeaderMain>
                         <Logo>
                             <Link to="/">
-                                <img src={logo} alt="404 Dirary 로고" />
+                                <img src={logo} alt="404 Diary 로고" />
                             </Link>
                         </Logo>
                         <Nav>

@@ -6,7 +6,7 @@ const Home = (props) => {
     return (
         <>
             <section>
-                <h3>404 DIRARY Main Page</h3>   
+                <h3>404 DIARY Main Page</h3>   
             </section>
         </>
     );

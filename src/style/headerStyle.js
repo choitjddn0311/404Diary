@@ -14,7 +14,6 @@ export const Header = styled.header `
     box-shadow: 0 0 20px #eee;
     }
 `;
-
 export const HeaderInner = styled.div `
     width: var(--containerWidth);
     height: 100%;
@@ -22,7 +21,6 @@ export const HeaderInner = styled.div `
     flex-direction: column;
     justify-content: center;
 `;
-
 export const HeaderTop = styled.div `
     width: 100%;
     height: 40px;
@@ -30,7 +28,6 @@ export const HeaderTop = styled.div `
     justify-content: end;
     align-items: center;
 `;
-
 export const AuthContainer = styled.ul `
     display: flex;
     justify-content: center;
@@ -45,24 +42,20 @@ export const AuthContainer = styled.ul `
         color: #111;
     }
 `;
-
 export const HeaderMain = styled.div `
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-between;
 `;
-
 export const Logo = styled.div `
     width: 20%;
     height: 100%;
     transition: .5s;
 `;
-
 export const Nav = styled.nav `
     width: 35%;
 `;
-
 export const GnbContainer = styled.ul `
     width: 100%;
     height: 100%;
@@ -70,7 +63,6 @@ export const GnbContainer = styled.ul `
     justify-content: space-between;
     align-items: center;
 `;
-
 export const Gnb = styled.li `
     height: 100%;
     position: relative;

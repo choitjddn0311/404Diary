@@ -15,4 +15,5 @@ export const Footer = styled.footer `
 
 export const FooterLogo = styled.div `
     filter: grayscale(1);
+    
 `;

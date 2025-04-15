@@ -7,7 +7,6 @@ export const WriteContainer = styled.section `
     justify-content: center;
     align-items: center;
 `;
-
 export const WriteInner = styled.div `
     width: 1400px;
     height: 90vh;
@@ -20,7 +19,6 @@ export const WriteInner = styled.div `
         border: none;
     }
 `;
-
 export const WriteForm = styled.form `
     width: 100%;
     height: 100%;
@@ -29,7 +27,6 @@ export const WriteForm = styled.form `
     flex-direction: column;
     justify-content: space-between;
 `;
-
 export const Title = styled.div `
     width: 100%;
     height: 10vh;
@@ -56,7 +53,6 @@ export const Title = styled.div `
         font-size: 30px;
     }
 `;
-
 export const Content = styled.div `
     width: 100%;
     height: 65vh;
